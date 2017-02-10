@@ -34,6 +34,16 @@
     <![endif]-->
     <style>
 
+  *{
+    -webkit-user-select: none;
+  -khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+
     <div id="myCarousel" class="carousel slide" style="width: 1000px; margin: 0 auto">
     ...
 </div>
@@ -57,7 +67,9 @@ textarea { border: none;
 
 </style>
 
- <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+ <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'>
+   
+ </script>
 
         <script>
   var nextQuote = 0;
@@ -225,6 +237,13 @@ function buttonClickHandler() {
     }
 
 </script>
+
+<script>
+ $('#textField').bind("cut copy paste",function(e) {
+     e.preventDefault();
+ });
+</script>
+
 
 
   </head>
