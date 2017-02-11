@@ -44,9 +44,7 @@ user-select: none;
 }
 
 
-    <div id="myCarousel" class="carousel slide" style="width: 1000px; margin: 0 auto">
-    ...
-</div>
+
 
 
 .item {
@@ -237,20 +235,35 @@ var buttonClickHandler1 = function () {
  });
 </script>
 
+ <script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
 
 
   </head>
 
-	  <body onload="startTime()" style="background-color:black;">
+	  <body style="background-color:black;" onload="startTime()">
+
+<div id="dialog" title="" style="background-color:none;">
+  <div class="col-md-12 featurette-divider">
+<img src="pausee.png" style="height:100px;" onclick="document.getElementById('myTune').pause()" >
+      </div>
+      
+</div>
+ 
+
 
 
     
 
    
-	  	<div >
+	  	<div  >
 
-        <div class="navbar-wrapper">
-            <div class="container">
+
+        <div class="navbar-wrapper" style="color: black" >
+            <div class="container" >
 
               <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
@@ -261,12 +274,15 @@ var buttonClickHandler1 = function () {
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"  >N'ko <h1 id="txt"> </h1> </a>
+                    <a class="navbar-brand" href="#"   >N'ko <h1 id="txt" > </h1> </a>
                   </div>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                       <!--<li class="active"><a href="#">  </a> </li> -->
-                      <!--<li color: "white"> contact : youssoufkadialy@yahoo.fr  </li> -->
+                     <li class="active"  >  &nbsp</li> 
+                     <li class="activ"  > <a href="#"  style="color: green" onclick="document.getElementById('myTune').play()">Play Music </a> </li> 
+                     <li class="activ" > <a href="#" style="color: white "onclick="document.getElementById('myTune').pause()">Pause Music</a>  </li> 
+                     <li class="activ" ><a href="#" style="color: red" onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;"> Stop Music</a>  </li> 
                       
                     
                     </ul>
@@ -334,7 +350,8 @@ var buttonClickHandler1 = function () {
     <!-- /.carousel -->
 
 
-
+<img src="pause.png" style="background-color:wite"  >
+<img src="play.png" >
 
 <!--
   <div class="container marketing">
@@ -346,12 +363,12 @@ var buttonClickHandler1 = function () {
       
       <div style="height:1 px" style="width:0px" align="center" id="dialo" style="color: black" >
         
-        <audio class="container-fluid audioCenter"  autoplay controls loop  >
+       <audio class="container-fluid audioCenter" id="myTune"  autoplay controls loop hidden   >
         <h6>Play music </h6>
         <source src="Lony.mp3" type="audio/ogg">
         <sourc src="Lony.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-      </audio>
+      </audio> 
 
 
       </div>
