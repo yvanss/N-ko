@@ -68,18 +68,18 @@ textarea { border: none;
  <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'>
    
  </script>
-
         <script>
-  var nextQuote = 0;
+  var nextQuote = 1;
   var quotes = [
-               " ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬",
-              " ߓߎ߬ ߕߍ߫ ߞߐ߫ ߟߊ߫",
+                 "0  ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬",
+              "1  ߓߎ߬ ߕߍ߫ ߞߐ߫ ߟߊ߫",
+               "1  ߓߎ߬ ߕߍ߫ ߞߐ߫ ߟߊ߫",
                
               
-                " ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬",
-              " ߓߍ߲߬ߓߊ߬ߟߌ߬ߦߊ߫ ߛߏ ߓߏ߲߬ߢߊ߫ ߺ ߊ ߺ ߓߏ߲߬ߢߊ߫ ߟߏ߲߫ ߞߋߟߋ߲߫ ߕߏ߲ߓߏ߲߫" ,
-              " ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬",
-              " ߓߍ߲߬ߓߊ߬ߟߌ߬ߦߊ߫ ߛߏ ߓߏ߲߬ߢߊ߫ ߺ ߊ ߺ ߓߏ߲߬ߢߊ߫ ߟߏ߲߫ ߞߋߟߋ߲߫ ߕߏ߲ߓߏ߲߫" ,
+                "2  ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬",
+              "3  ߓߍ߲߬ߓߊ߬ߟߌ߬ߦߊ߫ ߛߏ ߓߏ߲߬ߢߊ߫ ߺ ߊ ߺ ߓߏ߲߬ߢߊ߫ ߟߏ߲߫ ߞߋߟߋ߲߫ ߕߏ߲ߓߏ߲߫" ,
+              "4 ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬",
+              "5 ߓߍ߲߬ߓߊ߬ߟߌ߬ߦߊ߫ ߛߏ ߓߏ߲߬ߢߊ߫ ߺ ߊ ߺ ߓߏ߲߬ߢߊ߫ ߟߏ߲߫ ߞߋߟߋ߲߫ ߕߏ߲ߓߏ߲߫" ,
               "  ߓߍ߲߭ ߠߋ߬ ߞߙߍ߫ ߓߛߏ ߟߊ߫",
               " ߓߘߎ ߝߍߟߊ ߡߊߞߐ߬ߣߐ߲߬  ߞߎ߲߫ ߕߍ߫ ߘߊߥߎ߲ߠߌ߲ ߘߐ߫ ߸ߓߊ ߘߏ߫ ߦߴߊ߬ ߘߊ߫ ߟߊ߫",
               " ߓߎ߬ ߕߍ߫ ߞߐ߫ ߟߊ߫",
@@ -207,24 +207,33 @@ textarea { border: none;
               " ߓߊ߯ ߝߌߟߊ ߞߟߏߣߍ߲ ߦߋ߫ ߡߊ߬ߣߌ߲߬ߞߊ ߡߊ߬߸ߊ߱ ߊ߰ ߢߌߣߌ߲߫ ߝߋ߲ ߢߌߣߌ߲ ߠߋ߬ ߟߊ߫",
               " ߓߊ߯ ߝߎߦߋ߲ ߞߊ߲ ߡߍ߲ ߞߏ߫ ߊ߲ ߘߌ߫ ߘߏ߫ ߞߍ߫ ߓߏ߲ߠߌ߲ ߘߐ߫ ߓߌ߬߸ ߊ߰ ߞߓߊ߫ ߥߙߐߛߐ ߟߋ߬ ߘߐ߫",
               " ߓߊ߯ ߞߘߊߕߐ ߞߎ߲߭ ߓߌ߬ߟߊ߬ ߟߌ ߘߊ߮ ߘߐ߫߸ߊ߬ ߘߌ߫ ߥߴߊ߬ ߓߌ߬ߟߊ߫ ߞߏ߬ߓߌ߬ ߕߟߎ߬ ߘߊ߮ ߘߐ߫",
-              " ߓߊ߯ ߞߌߢߍ ߛߊ߲߫ ߡߊ߫ ߝߋ߲߫ ߕߟߊ ߡߊ߬ ߸ߊ߬ ߘߴߊ߬ ߝߐ߫ ߞߏ߫ ߊ߬ ߕߘߍ߬ ߊ߬ ߞߎ߲߭ ߠߋ߬ ߘߐߛߊ߫  ߟߊ߫"
+              " ߓߊ߯ ߞߌߢߍ ߛߊ߲߫ ߡߊ߫ ߝߋ߲߫ ߕߟߊ ߡߊ߬ ߸ߊ߬ ߘߴߊ߬ ߝߐ߫ ߞߏ߫ ߊ߬ ߕߘߍ߬ ߊ߬ ߞߎ߲߭ ߠߋ߬ ߘߐߛߊ߫  ߟߊ߫ "
 
   ,
+
                 ]
 
 var buttonClickHandler = function () {
         var textField = document.getElementById("textField"); 
-        textField.value = quotes[nextQuote +1 ]; 
+        if(nextQuote== quotes.length - 1){
+        	nextQuote=0;
+        }
+        textField.value = quotes[nextQuote +1 ] ; 
           nextQuote = nextQuote + 1 ;
          
-        return nextQuote    
+        return nextQuote;    
 
     }
 
-
 var buttonClickHandler1 = function () {
-        var textField = document.getElementById("textField"); 
-        nextQuote = nextQuote - 1 ;       
+        var textField = document.getElementById("textField");
+
+        if(nextQuote < 1) {
+           nextQuote= quotes.length - 1 ;
+        } else {
+        	nextQuote = nextQuote - 1 ;
+        }       
+
         textField.value = quotes[nextQuote ]; 
          
         return nextQuote;
@@ -232,6 +241,7 @@ var buttonClickHandler1 = function () {
     }
 
 </script>
+
 
 <script>
  $('#textField').bind("cut copy paste",function(e) {
