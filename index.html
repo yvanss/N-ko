@@ -252,7 +252,13 @@ var buttonClickHandler1 = function () {
  <script>
   $( function() {
     $( "#dialog" ).dialog();
-  } );
+  } ).dialog({
+    position: {
+        my: "center center",
+        at: "center center",
+        of: window
+    }
+});
   </script>
 
 
@@ -445,7 +451,13 @@ function checkTime(i) {
   <script>
   $( function() {
     $( "#dialog" ).dialog();
-  } );
+  } ).dialog({
+    position: {
+        my: "center center",
+        at: "center center",
+        of: window
+    }
+});
   </script>
 
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
