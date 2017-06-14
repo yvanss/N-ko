@@ -42,25 +42,40 @@
 user-select: none;
 }
 .item {
-  height: 10000px  margin: 0 auto; }
+  height: 10000px  margin:0 auto; }
 p {
     font-size: 80px;
 }  
  .audioCenter{margin: 100px auto; width: 320px align:center;}
-textarea { border: none;
+textarea { border: n0ne;
           font-size:40pt;
      height:800px;
      width:100%;
-      border-color:black;}
+     border-color: none; 
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+     margin-top: 100px;
+     padding-top:100px ;
+    color: yellow;
+    background: yellow  }
 
 
       .navba-brand {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
     margin-right: 0px;
     margin-left: 0px; 
    
 }
+
+.comments:focus{
+    border: 0 none #FFF;
+    overflow: hidden;
+    outline:none;
+    border-color: red;
+}
+
 </style>
 
  <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'>
@@ -246,13 +261,7 @@ var buttonClickHandler1 = function () {
         of: window
     }
 });
-  </script>
-  
-  .comments:focus{
-    border: 0 none #FFF;
-    overflow: hidden;
-    outline:none;
-}
+  </script>        
 
 
   </head>
@@ -299,7 +308,7 @@ var buttonClickHandler1 = function () {
 
 
 
-        <div  style="height:80px;" > </div>
+        <div  style="height:8px;" > </div>
 
         <div class="item active" style="height:10px;" style="background-color:black;">
         </div>
@@ -316,9 +325,12 @@ var buttonClickHandler1 = function () {
       </ol>
 
       <div class="carousel-inner" role="listbox">
-      <textarea  readonly style="background-color:black;" name="hide" style="display:none;" align="center" style="border: none" style="height:0 px;" style="width:0 px;" >
+
+   <textarea id="textField" readonly style="background-color:black;" name="hide" style="display:noe;" align="center" style="border: none" style="height: 800000px;" style="width:00; color: black;" >
+
+   ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬
   
-  </textarea>
+  </textarea> 
 
       <div class="item active" style="height: 100px  margin: 0 auto" >
           <img class="first-slide center-block" src="black.jpg" alt="First slide" align="center;">
@@ -326,13 +338,13 @@ var buttonClickHandler1 = function () {
             <div class="carousel-caption">
 
             <p  style="font-size:40px">
+
+          
   
-<textarea readonly id="textField" style="background-color:black;" align="center" style="height:150px;" style="width: 100% ;" >
-  ߓߍ߯ ߦߋ߫ ߣߛߌ߬ߓߊ߫ ߓߙߊߣߍ߲߫ ߜߍ߲߬ߜߍ߲߬ ߠߴߊ߬ ߞߣߐߘߐ߫ ߟߋ߬ ߞߊ߲߬
-        </textarea>
+   
  </p>      
           
-             
+           
              </div>
           </div>
         </div>
